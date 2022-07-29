@@ -1,0 +1,31 @@
+<section>
+    <h3>{{book.title | uppercase}}</h3>
+    <div>
+        <ul type="none">
+            <li>
+                <p>Title: {{book.title | uppercase}}</p>
+            </li>
+            <li>
+                <p>Author: {{book.author}}</p>
+            </li>
+            <li>
+                <p>Genre: {{book.genre}}</p>
+            </li>
+            <li>
+                <p>Year: {{book.date | date:'dd/MM/yyyy'}}</p>
+            </li>
+            <li>
+               <p>Edition: {{book.edition}}</p>
+            </li>
+            <li>
+                <p>Publishing by: {{book.publishing}}</p>
+             </li>
+             <li>
+                <p>Language: {{book.language}}</p>
+             </li>
+            <li>
+                <p>Price: {{book.price | currency}}</p>
+             </li>
+        </ul>
+    </div>
+</section>
