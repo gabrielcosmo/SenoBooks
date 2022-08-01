@@ -1,0 +1,47 @@
+@import '../../styles.css';
+
+*{
+    font-family: 'Poppins', sans-serif;
+    --card-theme: #2a92ee;
+}
+
+.card{
+    outline:2px solid var(--card-theme);
+    border: 2px solid white; 
+    width: 20em;
+    height: 25em;
+
+    box-shadow: 2px 2px 5px var(--card-theme);
+    flex-grow: 1;
+    flex-shrink: 1;
+
+    padding: 2em;
+    margin: 1em;
+}
+
+.mouseDown{
+    background-color: var(--card-theme);
+    color: white;
+}
+
+.mouseUp{
+    background-color: #0000;
+    color: var(--card-theme);
+}
+
+.bought{
+    background-color: #0000;
+    border-color: #1bd31b;
+    border-width: 2px;
+    color: #1bd31b;
+}
+
+.card:hover{
+    background-color: #07808d;
+    color: white;
+}
+
+ul{
+    margin: auto;
+    margin-bottom: 10%;
+}

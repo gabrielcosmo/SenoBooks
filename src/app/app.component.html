@@ -1,3 +1,8 @@
-<app-catalog *ngFor="let card of cards">
-  <app-card [book]="card"></app-card>
+<header>
+    <h1>
+        Seno Books
+    </h1>
+</header>
+<app-catalog [style]="{'display':'flex','flex-direction':'row'}">
+    <app-card *ngFor="let card of cards" [book]="card"></app-card>
 </app-catalog>

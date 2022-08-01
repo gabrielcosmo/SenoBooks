@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { CardComponent } from './card/card.component';
 import { Book } from './models/book';
 
 @Component({

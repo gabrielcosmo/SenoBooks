@@ -1,31 +1,15 @@
-<section>
-    <h3>{{book.title | uppercase}}</h3>
+<section class="card mouseDown" #card>
+    <h1>{{book.title | uppercase}}</h1>
     <div>
-        <ul type="none">
-            <li>
-                <p>Title: {{book.title | uppercase}}</p>
-            </li>
-            <li>
-                <p>Author: {{book.author}}</p>
-            </li>
-            <li>
-                <p>Genre: {{book.genre}}</p>
-            </li>
-            <li>
-                <p>Year: {{book.date | date:'dd/MM/yyyy'}}</p>
-            </li>
-            <li>
-               <p>Edition: {{book.edition}}</p>
-            </li>
-            <li>
-                <p>Publishing by: {{book.publishing}}</p>
-             </li>
-             <li>
-                <p>Language: {{book.language}}</p>
-             </li>
-            <li>
-                <p>Price: {{book.price | currency}}</p>
-             </li>
-        </ul>
+        <p>Title: {{book.title | uppercase}} Edition: {{book.edition}} </p>
+        <p>Author: {{book.author}}</p>
+        <p>Price: {{book.price | currency}}</p>
     </div>
+
+    <ul type="none" 
+    [ngStyle]="{'display':'flex','flex-direction':'row'}"
+    >
+        <app-card-button (click)="buttonBuy(card)">Buy</app-card-button>
+        <app-card-button (click)="removeCard(card)">Remove</app-card-button>
+    </ul>
 </section>

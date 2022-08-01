@@ -1,0 +1,39 @@
+*{
+    --btn-buy: #19c819;
+    --btn-buy-high: #20f720;
+    --btn-remove: #ff3434;
+}
+
+button{
+    width: 5em;
+    margin: 0.5em;
+    margin-top: 7em;
+    border-width: .2em;
+    border-color: none;
+    padding: 0.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.buy{
+    background-color: var(--btn-buy);
+    border-color: var(--btn-buy);
+    color:white;
+}
+
+.remove{
+    background-color: #00000000;
+    border-color: var(--btn-remove);
+    color: var(--btn-remove);
+}
+
+.buy:hover{
+    cursor: pointer;
+    background-color: var(--btn-buy-high);
+}
+
+.remove:hover{
+    cursor: pointer;
+    background-color: var(--btn-remove);
+    color: white;
+}

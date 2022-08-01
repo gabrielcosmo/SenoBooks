@@ -1,0 +1,26 @@
+@charset "utf-8";
+
+*{
+    font-family: 'Edu VIC WA NT Beginner', sans-serif;
+}
+
+header{
+    height: 50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 3em;
+
+    background-image: url('../assets/img/book-stand.jpg');
+    size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1{
+    color: white;
+    width: 100%;
+    text-align: center;
+}

@@ -1,0 +1,4 @@
+<button  #btn
+[ngClass]="{'remove': btn.innerText == 'Remove','buy': btn.innerText == 'Buy'}">
+    <ng-content></ng-content>
+</button>
