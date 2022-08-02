@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Book } from './models/book';
+import { BookService } from './service/book.service';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,11 @@ import { Book } from './models/book';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'SenoBooks';
+  title = 'Seno Books';
 
   //as informações sobre os livros são meramente ilustrativas
-  cards: Book[] = [
+  cards: Book[] = []
+  /*[
     {
       id: 0,
       title: 'The Fastest Man in the World',
@@ -44,10 +46,15 @@ export class AppComponent implements OnInit{
       publishing: 'Carnauba',
       price: 200
     },
-  ];
+  ];*/
 
-  constructor(){}
+  constructor(private bookService: BookService){}
 
   ngOnInit(): void {
+    this.bookService.getBooks().subscribe((data) =>{
+      console.log(typeof data)
+      this.cards = data;
+    
+    })
   }
 }

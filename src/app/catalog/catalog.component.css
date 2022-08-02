@@ -14,7 +14,8 @@ main > section{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-top: 20vw auto;;
+    margin-top: 20vw auto;
+    flex-wrap: wrap;
 }
 
 h1{
